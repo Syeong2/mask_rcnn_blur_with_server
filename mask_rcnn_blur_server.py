@@ -111,13 +111,6 @@ def blur_image(image, masked_image):
 
 
 def display_blurred(image, boxes, masks, ids, names, scores):
-    """
-    boxes: [num_instance, (y1, x1, y2, x2, class_id)] in image coordinates.
-    masks: [height, width, num_instances]
-    class_ids: [num_instances]
-    class_names: list of class names of the dataset
-    figsize: (optional) the size of the image.
-    """
     # Number of instances
     N = boxes.shape[0]
     if not N:
